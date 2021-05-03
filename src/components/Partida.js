@@ -1,10 +1,11 @@
+import React, {useState, useEffect} from 'react'
 
-
-export default function Partida(){
+export default function Partida(props){
+    const {tempo,Estado,data}= props
     return(
         <div>
-            <h1>Estado</h1>
-            <h3>Data: 2/2/200 Tempo: 19:00</h3>
+            <h1>{Estado}</h1>
+            <h3>Data: {data} Tempo: {tempo} </h3>
         </div>
     );
 }
