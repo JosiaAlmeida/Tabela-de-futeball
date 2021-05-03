@@ -5,9 +5,15 @@ export default class PlacarContainer extends Component{
     render(){
         return(
             <div>
-                <div> <Time timename="Vasca" /> </div>
-                <div><Partida /></div>
-                <div><Time timename="Valesca" /></div>
+                <div className="flex margin"> 
+                    <h1>Casa</h1>
+                    <Time timename="Vasca" /> 
+                </div>
+                <div className="flex margin"><Partida /></div>
+                <div className="flex margin">
+                    <h1>Visitante</h1>
+                    <Time timename="Valesca" />
+                    </div>
             </div>
         );
     }
