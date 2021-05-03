@@ -1,9 +1,10 @@
-import React from 'react'
+import React,{useState} from 'react'
 
-export default function botao(){
+export default function botao(props){
+    const {onClic}=props
     return(
         <div>
-            <button>GOL</button>
+            <button onClick={onClic} >GOL</button>
         </div>
     );
 }
